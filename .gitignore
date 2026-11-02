@@ -1,0 +1,12 @@
+.DS_store
+Thumbs.db
+
+.vscode/
+
+*.log
+
+*.tmp
+*.temp
+
+.env
+.env.*

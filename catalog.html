@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Каталог товаров учебного интернет-магазина.">
+    <title>Каталог — Учебный интернет-магазин</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Перейти к основному содержимому</a>
+    <header class="site-header">
+        <div class="site-header__inner">
+            <a class="site-header__logo" href="index.html">VacuumShop</a>
+            <nav class="site-nav" aria-label="Основная навигация">
+                <ul class="site-nav__list">
+                    <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
+                    <li class="site-nav__item"><a class="site-nav__link site-nav__link--active"
+                            href="catalog.html">Каталог</a></li>
+                    <li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="catalog-layout">
+            <aside class="catalog-filters">
+                <h2>Фильтры</h2>
+                <form class="filters-form" action="#" method="get">
+                    <fieldset>
+                        <legend>Категория</legend>
+                        <label><input type="checkbox" name="category" value="all"> Все товары</label>
+                        <label><input type="checkbox" name="category" value="popular"> Популярные</label>
+                        <label><input type="checkbox" name="category" value="new"> Новинки</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Цена</legend>
+                        <label for="price-from">От</label>
+                        <input id="price-from" name="price-from" type="number" min="0" placeholder="0">
+                        <label for="price-to">До</label>
+                        <input id="price-to" name="price-to" type="number" min="0" placeholder="100000">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Тип подключения</legend>
+                        <label><input type="checkbox" name="connection" value="corded">проводной</label>
+                        <label><input type="checkbox" name="connection" value="cordless">беспроводной</label>
+                    </fieldset>
+                    <button class="button button--primary" type="submit">Применить</button>
+                </form>
+            </aside>
+
+            <section class="catalog-products">
+                <h2>Список товаров</h2>
+                <div class="products-grid">
+                    <article class="product-card">
+                        <span class="product-card__badge">Скидка 20%</span>
+                        <img class="product-card__image" src="images/cleaner1.jpg" srcset="images/cleaner1-480.jpg 480w, images/cleaner1-960.jpg 960w" sizes="(max-width: 479px) 100vw, (max-width: 1023px) 50vw, 33vw" loading="lazy"
+                            alt="Пылесос Vacuum cleaner ULTRA PRO MAX" width="600" height="400">
+                        <h3 class="product-card__title">
+                            <a class="product-card__title-link" href="product.html">Vacuum cleaner ULTRA PRO MAX</a>
+                        </h3>
+                        <p class="product-card__description">Пылесос проводной.</p>
+                        <p class="product-card__price">Цена: 1000 руб.</p>
+                        <button class="button button--primary product-card__button" type="button"
+                            data-product="Vacuum cleaner ULTRA PRO MAX">
+                            Заказать
+                        </button>
+                    </article>
+                    <article class="product-card">
+                        <span class="product-card__badge">Новинка</span>
+                        <img class="product-card__image" src="images/cleaner2.jpg" srcset="images/cleaner2-480.jpg 480w, images/cleaner2-960.jpg 960w" sizes="(max-width: 479px) 100vw, (max-width: 1023px) 50vw, 33vw" loading="lazy" alt="Пылесос Vacuum cleaner RED"
+                            width="600" height="400">
+                        <h3 class="product-card__title">
+                            <a class="product-card__title-link" href="product2.html">Vacuum cleaner RED</a>
+                        </h3>
+                        <p class="product-card__description">Пылесос проводной.</p>
+                        <p class="product-card__price">Цена: 1500 руб.</p>
+                        <button class="button button--primary product-card__button" type="button"
+                            data-product="Vacuum cleaner RED">
+                            Заказать
+                        </button>
+                    </article>
+                    <article class="product-card">
+                        <span class="product-card__badge">Хит</span>
+                        <img class="product-card__image" src="images/cleaner3.jpg" srcset="images/cleaner3-480.jpg 480w, images/cleaner3-960.jpg 960w" sizes="(max-width: 479px) 100vw, (max-width: 1023px) 50vw, 33vw" loading="lazy" alt="Пылесос Karcher Vacuum"
+                            width="600" height="400">
+                        <h3 class="product-card__title">
+                            <a class="product-card__title-link" href="product3.html">Karcher Vacuum</a>
+                        </h3>
+                        <p class="product-card__description">Пылесос проводной.</p>
+                        <p class="product-card__price">Цена: 2000 руб.</p>
+                        <button class="button button--primary product-card__button" type="button"
+                            data-product="Karcher Vacuum">
+                            Заказать
+                        </button>
+                    </article>
+                    <article class="product-card">
+                        <span class="product-card__badge">Скидка 20%</span>
+                        <img class="product-card__image" src="images/cleaner1.jpg" srcset="images/cleaner1-480.jpg 480w, images/cleaner1-960.jpg 960w" sizes="(max-width: 479px) 100vw, (max-width: 1023px) 50vw, 33vw" loading="lazy"
+                            alt="Пылесос Vacuum cleaner ULTRA PRO MAX" width="600" height="400">
+                        <h3 class="product-card__title">
+                            <a class="product-card__title-link" href="product.html">Vacuum cleaner ULTRA PRO MAX</a>
+                        </h3>
+                        <p class="product-card__description">Пылесос проводной.</p>
+                        <p class="product-card__price">Цена: 1000 руб.</p>
+                        <button class="button button--primary product-card__button" type="button"
+                            data-product="Vacuum cleaner ULTRA PRO MAX">
+                            Заказать
+                        </button>
+                    </article>
+                    <article class="product-card">
+                        <span class="product-card__badge">Новинка</span>
+                        <img class="product-card__image" src="images/cleaner2.jpg" srcset="images/cleaner2-480.jpg 480w, images/cleaner2-960.jpg 960w" sizes="(max-width: 479px) 100vw, (max-width: 1023px) 50vw, 33vw" loading="lazy" alt="Пылесос Vacuum cleaner RED"
+                            width="600" height="400">
+                        <h3 class="product-card__title">
+                            <a class="product-card__title-link" href="product2.html">Vacuum cleaner RED</a>
+                        </h3>
+                        <p class="product-card__description">Пылесос проводной.</p>
+                        <p class="product-card__price">Цена: 1500 руб.</p>
+                        <button class="button button--primary product-card__button" type="button"
+                            data-product="Vacuum cleaner RED">
+                            Заказать
+                        </button>
+                    </article>
+                    <article class="product-card">
+                        <span class="product-card__badge">Хит</span>
+                        <img class="product-card__image" src="images/cleaner3.jpg" srcset="images/cleaner3-480.jpg 480w, images/cleaner3-960.jpg 960w" sizes="(max-width: 479px) 100vw, (max-width: 1023px) 50vw, 33vw" loading="lazy" alt="Пылесос Karcher Vacuum"
+                            width="600" height="400">
+                        <h3 class="product-card__title">
+                            <a class="product-card__title-link" href="product3.html">Karcher Vacuum</a>
+                        </h3>
+                        <p class="product-card__description">Пылесос проводной.</p>
+                        <p class="product-card__price">Цена: 2000 руб.</p>
+                        <button class="button button--primary product-card__button" type="button"
+                            data-product="Karcher Vacuum">
+                            Заказать
+                        </button>
+                    </article>
+                </div>
+            </section>
+        </section>
+    </main>
+    <dialog class="order-dialog" id="order-dialog" aria-labelledby="order-dialog-title">
+        <h2 class="order-dialog__title" id="order-dialog-title">Оформление заявки</h2>
+        <form class="order-form" id="order-form" action="#" method="post" novalidate>
+            <input id="selected-product" name="selected-product" type="hidden">
+            <div class="order-form__field">
+                <label class="order-form__label" for="order-name">Имя</label>
+                <input class="order-form__input" id="order-name" name="name" type="text" placeholder="Введите ваше имя"
+                    minlength="2" autocomplete="given-name" required>
+            </div>
+            <div class="order-form__field">
+                <label class="order-form__label" for="order-email">E-mail</label>
+                <input class="order-form__input" id="order-email" name="email" type="email"
+                    placeholder="example@mail.ru" autocomplete="email" required>
+            </div>
+            <div class="order-form__field">
+                <label class="order-form__label" for="order-phone">Телефон</label>
+                <input class="order-form__input" id="order-phone" name="phone" type="tel" inputmode="tel"
+                    placeholder="+7 (900) 000-00-00" pattern="^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$" required>
+                <small>Формат: +7 (900) 000-00-00</small>
+            </div>
+            <div class="order-form__field">
+                <label class="order-form__label" for="order-date">Дата связи</label>
+                <input class="order-form__input" id="order-date" name="date" type="date">
+            </div>
+            <div class="order-form__field">
+                <label class="order-form__label" for="order-topic">Тема заявки</label>
+                <select class="order-form__select" id="order-topic" name="topic" required>
+                    <option value="">Выберите тему</option>
+                    <option value="product">Заказ товара</option>
+                    <option value="consultation">Консультация</option>
+                    <option value="delivery">Доставка</option>
+                </select>
+            </div>
+            <div class="order-form__field">
+                <label class="order-form__label" for="order-comment">Комментарий</label>
+                <textarea class="order-form__textarea" id="order-comment" name="comment" rows="4"
+                    placeholder="Укажите дополнительную информацию"></textarea>
+            </div>
+            <div class="order-form__field order-form__field--checkbox">
+                <label>
+                    <input id="order-agreement" name="agreement" type="checkbox" required>
+                    Я согласен на обработку данных
+                </label>
+            </div>
+            <div class="order-form__actions">
+                <button class="button button--secondary" type="button" id="close-order-dialog">Закрыть</button>
+                <button class="button button--primary" type="submit">Отправить заявку</button>
+            </div>
+        </form>
+    </dialog>
+    <p class="success-message" id="success-message" hidden role="status" tabindex="-1">Форма успешно отправлена!</p>
+
+    <footer class="site-footer" id="contacts">
+        <div class="site-footer__inner">
+            <p>&copy; 2026 Учебный проект. Все права защищены.</p>
+            <p>Дисциплина: Фронтенд и бэкенд разработка</p>
+        </div>
+    </footer>
+</body>
+
+</html>
